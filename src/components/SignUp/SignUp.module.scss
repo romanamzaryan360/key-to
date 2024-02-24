@@ -1,0 +1,106 @@
+#signUp {
+    background-color: #4a4458;
+    background-image: url(../../assets/svg/background-pattern.svg);
+    padding-top: 64px;
+
+    #container {
+        display: grid;
+        grid-template-columns: 360px 1fr;
+        gap: 171px;
+        padding-bottom: 64px;
+
+        form {
+            h3 {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.15px;
+                color: #eaddff;
+                margin-bottom: 8px;
+            }
+
+            h2 {
+                font-family: Montserrat;
+                color: #eaddff;
+                text-transform: uppercase;
+                line-height: 52px;
+                font-size: 45px;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+
+            p {
+                font-family: Montserrat;
+                color: #eaddff;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                margin-bottom: 32px;
+            }
+
+            #formGroup {
+                gap: 16px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 28px;
+            }
+
+            #agreeWithTerms {
+                display: flex;
+                justify-content: space-between;
+
+                .content {
+                    h4 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.5px;
+                        color: #fef7ff;
+                        margin-bottom: 6px;
+                    }
+
+                    a {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.25px;
+                        color: #e7e0ec;
+                    }
+                }
+            }
+
+            #submit {
+                width: 100%;
+                border-radius: 4px;
+                padding: 20px;
+                gap: 8px;
+                background-color: #f7f2fa;
+                box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+                color: #6750A4;
+                margin-bottom: 16px;
+                margin-top: 20px;
+            }
+
+            #signIn {
+                display: block;
+                width: 100%;
+                color: #FFFFFF;
+                letter-spacing: 0.15px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: Montserrat;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+}

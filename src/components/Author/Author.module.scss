@@ -1,0 +1,41 @@
+#author {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 120px;
+    padding-bottom: 128px;
+
+    #content {
+        h2 {
+            color: #1d192b;
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 52px;
+            margin-bottom: 26px;
+            margin-top: 50px;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #21005d;
+        }
+    }
+
+    img {
+        border-radius: 50%;
+        width: 360px;
+        height: 360px;
+        object-fit: cover;
+    }
+
+    &.dark #content {
+        h2,
+        p {
+            color: #ffffff;
+        }
+    }
+}

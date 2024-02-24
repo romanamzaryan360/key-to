@@ -1,0 +1,38 @@
+#banner {
+    position: relative;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background-color: #21005D;
+
+    #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h2 {
+            color: #E8DEF8;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 57px;
+            line-height: 64px;
+            letter-spacing: -0.25px;
+        }
+
+        p {
+            width: 608px;
+            color: #E8DEF8;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            text-align: right;
+        }
+    }
+}

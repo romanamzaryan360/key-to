@@ -1,0 +1,86 @@
+#wrapper {
+    background: #f5eff7;
+}
+
+#findPartner {
+    padding-top: 130px;
+    padding-bottom: 128px;
+    display: grid;
+    grid-template-columns: 456px 1fr;
+    position: 2;
+
+    #content {
+        width: 456px;
+
+        h2 {
+            color: #1d192b;
+            letter-spacing: -0.25px;
+            line-height: 64px;
+            font-size: 57px;
+            font-weight: 700;
+            font-family: Montserrat;
+            width: 384px;
+            margin-bottom: 32px;
+        }
+
+        p {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #625b71;
+            margin-bottom: 32px;
+        }
+    }
+
+    #partners {
+        position: relative;
+        width: 100%;
+
+        img {
+            z-index: 1;
+            position: absolute;
+        }
+
+        #flowerTop {
+            top: -63px;
+            left: 64px;
+        }
+
+        #flowerBottom {
+            bottom: -78px;
+            right: -32px;
+        }
+
+        h3 {
+            color: #000000;
+            font-family: Montserrat;
+            font-weight: 400;
+            position: absolute;
+
+            &:nth-of-type(1) {
+                font-size: 45px;
+                line-height: 52px;
+                top: 4px;
+                left: 144px;
+            }
+
+            &:nth-of-type(2) {
+                display: block;
+                width: 198px;
+                font-size: 36px;
+                line-height: 44px;
+                top: 155px;
+                left: 307px;
+            }
+
+            &:nth-of-type(3) {
+                font-size: 45px;
+                line-height: 52px;
+                bottom: -15px;
+                right: 11px;
+            }
+        }
+    }
+}

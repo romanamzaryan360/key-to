@@ -1,0 +1,31 @@
+.formInput {
+    input {
+        border: 1px solid #79747e;
+        gap: 10px;
+        width: 100%;
+        height: 56px;
+        border-radius: 4px;
+        padding: 16px;
+        // padding-top: 18px;
+        background-color: transparent;
+        margin-bottom: 2px;
+
+        &::placeholder {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            color: #fef7ff;
+        }
+    }
+
+    label {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fef7ff;
+        margin-left: 16px;
+    }
+}

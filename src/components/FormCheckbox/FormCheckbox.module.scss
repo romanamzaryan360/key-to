@@ -1,0 +1,29 @@
+.checkbox {
+    user-select: none;
+    padding: 11px;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        background-color: #ffffff;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 5px;
+        margin-top: 3px;
+
+        &.active {
+            background-color: #6750a4;
+        }
+    }
+}

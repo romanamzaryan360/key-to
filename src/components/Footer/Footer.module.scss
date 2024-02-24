@@ -1,0 +1,157 @@
+#footer {
+    #wrapper {
+        display: flex;
+
+        #socials {
+            margin-right: 192px;
+            p {
+                width: 288px;
+                color: #625b71;
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.25px;
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+        }
+
+        #menu {
+            margin-right: 96px;
+
+            a {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 32px;
+                letter-spacing: 0.15px;
+                color: #625b71;
+                margin-bottom: 8p;
+                text-decoration: none;
+                display: block;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &:first-child {
+                    margin-top: 8px;
+                }
+            }
+        }
+
+        #subscribeWrapper {
+            width: 360px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+			margin-left: 10px;
+
+            #subscribe {
+                label {
+                    text-align: left;
+                    text-transform: uppercase;
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    margin-bottom: 6px;
+                    margin-left: 4px;
+                    color: #625b71;
+                    display: block;
+                }
+
+                input {
+                    padding-left: 15px;
+    				padding-top: 6px;
+                    border: 1px solid #79747e;
+                    margin-bottom: 16px;
+                    width: 360px;
+					height: 56px;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    margin-left: 5px;
+
+                    &::placeholder {
+                        color: #49454f;
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.5px;
+                    }
+                }
+
+                button {
+                    width: 360px;
+					height: 60px;
+                    background-color: #625b71;
+                    color: #ffffff;
+                    box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
+                    border-radius: 4px;
+                    padding: 20px;
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.1px;
+                    border: none;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    #copyright {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #625b71;
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+
+    &.dark {
+        #wrapper {
+            #socials {
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            #menu {
+                a {
+                    color: #ffffff;
+                }
+            }
+
+            #subscribeWrapper {
+                #subscribe {
+                    label {
+                        color: #ffffff;
+                    }
+
+                    input {
+                        &::placeholder {
+                            color: #fef7ff;
+                        }
+                    }
+
+                    button {
+                        background-color: #f7f2fa;
+                        color: #6750a4;
+                    }
+                }
+            }
+        }
+
+        #copyright {
+            color: #ffffff;
+        }
+    }
+}
