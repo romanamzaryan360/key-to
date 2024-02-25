@@ -2,12 +2,16 @@
     margin-top: 64px;
     margin-bottom: 64px;
     display: grid;
-    grid-template-columns: 1fr 648px;
+    grid-template-areas:
+        "image content"
+        "image smallContent";
 
     #image {
+        grid-area: image;
         display: flex;
         align-items: center;
         justify-content: center;
+        order: 1;
 
         img {
             margin-right: 70px;
@@ -16,6 +20,12 @@
     }
 
     #content {
+        order: 2;
+        grid-area: content;
+    }
+
+    #content,
+    #smallContent {
         h3,
         p {
             font-family: Montserrat;
@@ -41,21 +51,269 @@
 
         p {
             color: #625b71;
-            margin-bottom: 32px;
+            margin-bottom: 0;
+        }
+
+        button {
+            margin-top: 32px;
         }
 
         &.dark {
-            h3, h1 {
-                color: #EADDFF;
+            h3,
+            h1 {
+                color: #eaddff !important;
             }
 
             p {
-                color: #FFFFFF;
+                color: #ffffff !important;
             }
 
             button {
-                color: #6750A4;
-                background-color: #F7F2FA;
+                color: #6750a4 !important;
+                background-color: #f7f2fa !important;
+            }
+        }
+    }
+
+    #smallContent {
+        grid-area: smallContent;
+    }
+}
+
+@media (max-width: 1220px) {
+    #getStarted {
+        grid-template-areas:
+            "content image"
+            "smallContent smallContent";
+
+        #image {
+            order: 2;
+
+            img {
+                margin: 0;
+                width: 310px;
+                height: 310px;
+            }
+        }
+
+        #content {
+            order: 1;
+
+            h1 {
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 400;
+                width: 350px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #21005d;
+            }
+        }
+
+        #smallContent {
+            margin-top: 64px;
+
+            p {
+                color: #21005d;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            button {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #getStarted {
+        width: 536px;
+        margin-top: 45px;
+
+        #image {
+            img {
+                margin: 0;
+                width: 242px;
+                height: 258px;
+            }
+        }
+
+        #content {
+            padding-top: 27px;
+            padding-left: 1px;
+            margin-right: -56px;
+
+            h3 {
+                font-family: Montserrat;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                color: #21005d;
+                margin-bottom: 12px;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 40px;
+                font-family: Montserrat;
+                color: #21005d;
+                padding-left: 2px;
+                margin-bottom: 16px;
+            }
+
+            p {
+                color: #21005d;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+                font-family: Montserrat;
+                width: 260px;
+                letter-spacing: 0;
+            }
+        }
+
+        #smallContent {
+            margin-top: 64px;
+
+            p {
+                color: #21005d;
+                margin-bottom: 16px;
+                text-align: center;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0;
+
+                &:last-of-type {
+                    margin-bottom: 64px;
+                }
+            }
+
+            button {
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #getStarted {
+        width: 390px;
+        position: relative;
+        grid-template-areas:
+            "image"
+            "content"
+            "smallContent";
+
+        #image {
+            position: absolute;
+            left: 0;
+            width: 390px;
+            height: 416px;
+            opacity: 10%;
+            top: -45px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                
+            }
+        }
+
+        #content,
+        #smallContent {
+            text-align: center;
+            padding-top: 17px;
+            padding-left: 1px;
+            margin-right: -1px;
+
+            h3 {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+                color: #21005d;
+                margin-bottom: 8px;
+            }
+
+            h1 {
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 40px;
+                color: #21005d;
+                text-transform: uppercase;
+                width: 100%;
+                letter-spacing: 0;
+                padding-left: 0;
+                margin-bottom: 32px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+                color: #6750a4;
+                width: 358px;
+                text-align: center;
+                margin: auto;
+            }
+        }
+
+        #smallContent {
+            margin-top: 16px;
+
+            p {
+                &:nth-child(2) {
+                    margin-top: 20px;
+                }
+            }
+
+            button {
+                width: 358px;
+                height: 68px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 1px;
+                color: #FFFFFF;
+                background-color: #21005D;
+            }
+        }
+
+        &.dark {
+            #content {
+                h3 {
+                    color: #eaddff;
+                }
+
+                h1 {
+                    color: #eaddff;
+                }
+
+                p {
+                    color: #ffffff;
+                }
+            }
+
+            #smallContent {
+                margin-top: 16px;
+    
+                p {
+                    &:nth-child(2) {
+                        margin-top: 20px;
+                    }
+                }
+    
+                button {
+                    color: #1D192B;
+                    background-color: #E8DEF8;
+                }
             }
         }
     }

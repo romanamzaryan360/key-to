@@ -20,3 +20,25 @@ body {
 body.Dark {
 	background-color: #1D192B;
 }
+
+@media (max-width: 1220px) {
+	.container {
+		width: 900px;
+	}
+}
+
+@media (max-width: 900px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 358px;
+	}
+
+	#app {
+		overflow: hidden;
+	}
+}

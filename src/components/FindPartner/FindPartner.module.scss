@@ -7,7 +7,7 @@
     padding-bottom: 128px;
     display: grid;
     grid-template-columns: 456px 1fr;
-    position: 2;
+    position: relative;
 
     #content {
         width: 456px;
@@ -80,6 +80,229 @@
                 line-height: 52px;
                 bottom: -15px;
                 right: 11px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1220px) {
+    #findPartner {
+        display: block;
+
+        #content {
+            width: 100%;
+
+            h2 {
+                width: 100%;
+                font-weight: 400;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            button {
+                display: block;
+                margin: auto;
+            }
+        }
+
+        #partners {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            #flowerTop {
+                top: -44px;
+                left: -72px;
+            }
+
+            #flowerBottom {
+                bottom: -553px;
+                right: 149px;
+            }
+
+            h3 {
+                font-size: 33px !important;
+
+                &:nth-of-type(1) {
+                    color: #000000;
+                    opacity: 30%;
+                    top: 20px;
+                    left: 0px;
+                }
+
+                &:nth-of-type(2) {
+                    color: #6750a4;
+                    opacity: 50%;
+                    top: 17px;
+                    left: 739px;
+                }
+
+                &:nth-of-type(3) {
+                    color: #000000;
+                    top: 433px;
+                    right: -77px;
+                    opacity: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #wrapper {
+        #findPartner {
+            padding-top: 188px;
+            padding-bottom: 149px;
+            padding-left: 30px;
+
+            #content {
+                width: 531px;
+
+                h2 {
+                    font-weight: 400;
+                    font-size: 32px !important;
+                    line-height: 40px;
+                    letter-spacing: 0;
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    letter-spacing: 0;
+                    color: #21005d !important;
+                    padding-left: 6px;
+                }
+
+                button {
+                    margin-left: 137px;
+                    padding-left: 23px;
+                }
+            }
+
+            #partners {
+                #flowerTop {
+                    width: 124px;
+                    height: 124px;
+                    top: 34px;
+                    left: 6px;
+                }
+
+                #flowerBottom {
+                    width: 100px;
+                    height: 100px;
+                    bottom: -557px;
+                    right: 131px;
+                }
+
+                h3 {
+                    &:nth-of-type(1) {
+                        top: 66px;
+                        left: 61px;
+                        font-size: 28px !important;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-size: 16px !important;
+                        width: 95px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        font-weight: 500;
+                        top: 33px;
+                        left: 443px;
+                    }
+
+                    &:nth-of-type(3) {
+                        font-weight: 500;
+                        font-size: 16px !important;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        top: 500px;
+                        right: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        #findPartner {
+            padding: 0;
+            padding-top: 77px;
+            padding-bottom: 33px;
+
+            #content {
+                h2 {
+                    width: 358px;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    padding-left: 0;
+                    width: 359px;
+                    font-size: 14px;
+                    line-height: 20px;
+                    letter-spacing: 0.1px;
+                    font-weight: 500;
+                    margin-bottom: 84px;
+                }
+
+                button {
+                    width: 358px;
+                    margin: 0;
+                    height: 68px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+            }
+
+            #partners {
+                img {
+                    width: 60px !important;
+                    height: 60px !important;
+                }
+
+                #flowerTop {
+                    top: 5px;
+                    left: -5px;
+                }
+
+                #flowerBottom {
+                    bottom: -380px;
+                    right: -2px;
+                }
+
+                h3 {
+                    &:nth-of-type(1) {
+                        top: 10px;
+                        left: 21px;
+                        font-size: 16px !important;
+                    }
+
+                    &:nth-of-type(2) {
+                        top: 25px;
+                        left: 225px;
+                        letter-spacing: 0;
+                        width: 137px;
+                        font-size: 12px !important;
+                    }
+
+                    &:nth-of-type(3) {
+                        top: 344px;
+                        right: -2px;
+                        font-size: 14px !important;
+                    }
+                }
             }
         }
     }

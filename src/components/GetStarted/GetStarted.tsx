@@ -4,7 +4,7 @@ import imageLight from "../../assets/svg/get-started-light.svg";
 import { useAppSelector } from "../../store";
 import { DARK } from "../../constants/modes";
 import classNames from "classnames";
-import Button from "../Button";
+import Content from "./Content";
 
 const GetStarted = () => {
     const mode = useAppSelector((state) => state.app.mode);
@@ -19,16 +19,10 @@ const GetStarted = () => {
                 <h1>KeyTo Method, Change your life</h1>
                 <p>
                     Project "Key To" is your key to fully understand yourself. Our method allows you to accurately
-                    determine your destiny, as well as find a partner for an ideal relationship. <br /> "Key To" is a
-                    unique self-discovery tool that is based on researching your date of birth. We know that the day,
-                    month and year you came into this world, carries the hidden code of your destiny. Your date of birth
-                    is a unique key that unlocks your true self.
-                    <br /> Register and enter your date of birth to receive in depth personality analysis and unique
-                    tips for your development. Discover areas where you can succeed in and learn about potential
-                    obstacles on your way.
+                    determine your destiny, as well as find a partner for an ideal relationship.
                 </p>
-                <Button type="dark">Get Started</Button>
             </div>
+            <Content id={classes.smallContent} classList={mode === DARK ? classes.dark : ""} />
         </div>
     );
 };

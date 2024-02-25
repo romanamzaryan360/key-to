@@ -5,9 +5,11 @@ import { DARK } from "../../constants/modes";
 import logoSmallDark from "../../assets/svg/logo-small-dark.svg";
 import logoSmallLight from "../../assets/svg/logo-small-light.svg";
 import Socials from "../Socials";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const Footer = () => {
     const mode = useAppSelector((state) => state.app.mode);
+    const { width } = useWindowDimensions();
 
     return (
         <div id={classes.footer} className={classNames("container", { [classes.dark]: mode === DARK })}>
@@ -18,7 +20,7 @@ const Footer = () => {
                         The unique system of KeyTo is meant to analyze a person's data and find better compatibility
                         between people.
                     </p>
-                    <Socials />
+                    {width > 900 ? <Socials classList={classes.socialsList} /> : null}
                 </div>
                 <div id={classes.menu}>
                     <a href="#about">About Us</a>
@@ -35,6 +37,7 @@ const Footer = () => {
                         <button>Subscribe now</button>
                     </form>
                 </div>
+                {width <= 900 ? <Socials classList={classes.socialsList} /> : null}
             </div>
             <p id={classes.copyright}>© Copyright 2022, All Rights Reserved by KEYTO</p>
         </div>

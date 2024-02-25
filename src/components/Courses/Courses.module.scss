@@ -2,6 +2,34 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    padding-top: 64px;
+    padding-top: 62px;
     padding-bottom: 128px;
+}
+
+@media (max-width: 900px) {
+    #courses {
+        width: 390px;
+        flex-direction: column;
+        gap: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    #courses {
+        padding-bottom: 62px;
+        
+        > div {
+            &:nth-child(3n) {
+                h3 {
+                    margin-top: 107px !important;
+                }
+
+                p {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
 }

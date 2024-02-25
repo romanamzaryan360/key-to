@@ -47,7 +47,7 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-			margin-left: 10px;
+            margin-left: 10px;
 
             #subscribe {
                 label {
@@ -66,11 +66,11 @@
 
                 input {
                     padding-left: 15px;
-    				padding-top: 6px;
+                    padding-top: 6px;
                     border: 1px solid #79747e;
                     margin-bottom: 16px;
                     width: 360px;
-					height: 56px;
+                    height: 56px;
                     background-color: transparent;
                     border-radius: 4px;
                     margin-left: 5px;
@@ -87,7 +87,7 @@
 
                 button {
                     width: 360px;
-					height: 60px;
+                    height: 60px;
                     background-color: #625b71;
                     color: #ffffff;
                     box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
@@ -152,6 +152,160 @@
 
         #copyright {
             color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #footer {
+        width: 360px;
+        margin: auto;
+
+        #wrapper {
+            flex-direction: column;
+
+            #socials {
+                width: 100%;
+
+                img {
+                    display: block;
+                    margin: auto;
+                    width: 50px;
+                    height: 60px;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    text-align: Center;
+                    color: #6750A4;
+                    width: 287px;
+                    margin: auto;
+                    letter-spacing: 0;
+                    margin-right: 35px;
+                    margin-bottom: 32px;
+                }
+            }
+
+            #menu {
+                margin-right: 2px;
+                margin-top: 1px;
+                display: flex;
+                gap: 16px;
+                flex-direction: column;
+                margin-bottom: 64px;
+
+                a {
+                    display: block;
+                    margin: auto;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.15px;
+                    color: #6750a4;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    &:nth-child(4) {
+                        margin-left: -4px;
+                    }
+
+                    &:nth-child(5) {
+                        margin-left: 2px;
+                    }
+                }
+            }
+
+            #subscribeWrapper {
+                margin-left: -2px;
+                margin-top: 1px;
+
+                #subscribe {
+                    label {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.15px;
+                        color: #6750a4;
+                    }
+
+                    input {
+                        padding-top: 3px;
+
+                        &::placeholder {
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            letter-spacing: 0.25px;
+                            color: #625b71;
+                        }
+                    }
+
+                    button {
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: #ffffff;
+                        background-color: #6750a4;
+                        margin-bottom: 64px;
+                    }
+                }
+            }
+        }
+
+        #copyright {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #21005d;
+            margin-top: 32px;
+            margin-left: 3px;
+            letter-spacing: 0;
+        }
+
+        &.dark {
+            #wrapper {
+                #socials {
+                    p {
+                        color: #ffffff;
+                    }
+                }
+
+                #menu {
+                    a {
+                        color: #ffffff;
+                    }
+                }
+
+                #subscribeWrapper {
+                    #subscribe {
+                        label {
+                            color: #ffffff;
+                        }
+
+                        input {
+                            &::placeholder {
+                                color: #fef7ff;
+                            }
+                        }
+
+                        button {
+                            color: #6750a4;
+                            background-color: #f7f2fa;
+                        }
+                    }
+                }
+            }
+
+            #copyright {
+                color: #ffffff;
+            }
         }
     }
 }

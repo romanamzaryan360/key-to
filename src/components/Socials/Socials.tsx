@@ -10,11 +10,15 @@ import tiktokDark from "../../assets/svg/tiktok-dark.svg";
 import tiktokLight from "../../assets/svg/tiktok-light.svg";
 import { DARK } from "../../constants/modes";
 
-const Socials = () => {
+type SocialsPropsType = {
+    classList?: string;
+};
+
+const Socials = ({ classList }: SocialsPropsType) => {
     const mode = useAppSelector((state) => state.app.mode);
 
     return (
-        <div id={classes.socials}>
+        <div id={classes.socials} className={classList}>
             <img src={mode === DARK ? facebookDark : facebookLight} alt="Facebook" />
             <img src={mode === DARK ? instagramDark : instagramLight} alt="Instagram" />
             <img src={mode === DARK ? youtubeDark : youtubeLight} alt="Youtube" />

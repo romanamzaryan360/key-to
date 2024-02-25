@@ -5,9 +5,11 @@ import { useAppSelector } from "../../store";
 import { DARK } from "../../constants/modes";
 import FormInput from "../FormInput";
 import FormCheckbox from "../FormCheckbox";
+import useWindowDimensions from "../../hooks/useWindowDimensions";
 
 const SignUp = () => {
     const mode = useAppSelector((state) => state.app.mode);
+    const { width } = useWindowDimensions();
 
     return (
         <div id={classes.signUp}>
@@ -31,7 +33,7 @@ const SignUp = () => {
                         <FormInput
                             type="password"
                             id="password_confirmation"
-                            help="Confirm your password"
+                            help={width > 900 ? "Confirm your password" : "Type your new password here"}
                             placeholder="Confirm password"
                         />
                     </div>
@@ -48,8 +50,12 @@ const SignUp = () => {
                         <FormCheckbox id="terms" />
                     </div>
 
-                    <button id={classes.submit} type="submit">Sign up</button>
-                    <a id={classes.signIn} href="#sign-in">SIGN IN</a>
+                    <button id={classes.submit} type="submit">
+                        Sign up
+                    </button>
+                    <a id={classes.signIn} href="#sign-in">
+                        SIGN IN
+                    </a>
                 </form>
                 <img src={mode === DARK ? cardsDark : cardsLight} alt="Cards" />
             </div>

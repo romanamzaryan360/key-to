@@ -65,11 +65,152 @@
 
     &.dark {
         h3 {
-            color: #EADDFF;
+            color: #eaddff;
         }
 
         p {
-            color: #FFFFFF;
+            color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #course {
+        width: 536px !important;
+        background-color: #625b71;
+        height: 247px;
+
+        img {
+            max-width: 50px;
+            top: 32px;
+            left: 32px;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            letter-spacing: 0;
+            color: #eaddff;
+            width: 260px;
+            margin-left: 82px;
+            margin-top: 11px;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #ffffff;
+            letter-spacing: 0;
+            width: 459px;
+            margin-bottom: 17px;
+        }
+
+        a {
+            font-weight: 400;
+            font-size: 12px;
+            height: 44px;
+            line-height: 16px;
+            letter-spacing: 0;
+            color: #6750a4;
+        }
+
+        &.small {
+            img {
+                width: 42px;
+                top: 30px;
+            }
+
+            h3 {
+                margin-top: 15px;
+                margin-left: 73px;
+                margin-bottom: 38px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            a {
+                width: 204px;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #course {
+        width: 358px !important;
+        margin: auto;
+        height: auto;
+
+        img {
+            max-width: 103px;
+            top: 29px;
+        }
+
+        h3 {
+            margin-top: 117px;
+            margin-left: 0;
+            width: 154px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+
+        }
+
+        &.small {
+            img {
+                width: 68px !important;
+            }
+
+            h3 {
+                margin-top: 115px;
+                margin-left: 0;
+                width: 154px;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0;
+                margin-bottom: 15px;
+            }
+    
+            p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+                width: 300px;
+                margin-bottom: 16px;
+            }
+    
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.1px;
+    
+            }
         }
     }
 }

@@ -14,15 +14,15 @@
             margin-bottom: 26px;
             margin-top: 50px;
         }
+    }
 
-        p {
-            font-family: Montserrat;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 24px;
-            letter-spacing: 0.15px;
-            color: #21005d;
-        }
+    p {
+        font-family: Montserrat;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: #21005d;
     }
 
     img {
@@ -36,6 +36,97 @@
         h2,
         p {
             color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #author {
+        width: 536px;
+        grid-template-columns: 1fr 159px;
+        gap: 28px;
+        padding-bottom: 64px;
+
+        #content {
+            h2 {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                letter-spacing: 0;
+                color: #21005d;
+                margin-top: 10px;
+                margin-left: 1px;
+                margin-bottom: 19px;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0;
+            color: #6750a4;
+            width: 344px;
+            margin-left: 2px;
+            padding-bottom: 9px;
+        }
+
+        img {
+            width: 159px;
+            height: 198px;
+            border-radius: 180px;
+        }
+
+        &.dark {
+            #content {
+                h2 {
+                    color: #ffffff;
+                }
+
+                p {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    #author {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        padding-bottom: 56px;
+
+        #content {
+            h2 {
+                width: 358px;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 40px;
+                letter-spacing: 0;
+                text-align: center;
+                margin: auto;
+            }
+        }
+
+        p {
+            width: 353px;
+            margin: auto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-align: Center;
+        }
+
+        img {
+            width: 151.82px;
+            height: 148px;
+            border-radius: 50%;
+            display: block;
+            margin: auto;
         }
     }
 }

@@ -8,17 +8,18 @@ import { useAppDispatch, useAppSelector } from "../../store";
 import classNames from "classnames";
 import { DARK, LIGHT } from "../../constants/modes";
 import { switchMode } from "../../store/app/appSlice";
+import avatar from "../../assets/img/author-2.jpg";
 
 const Header = () => {
     const mode = useAppSelector((state) => state.app.mode);
     const dispatch = useAppDispatch();
 
     const onSwitcherChange = (status: boolean) => {
-		dispatch(switchMode(status ? DARK : LIGHT));
-	};
+        dispatch(switchMode(status ? DARK : LIGHT));
+    };
 
     return (
-        <header id={classes.header} className={classNames("container", {[classes.dark]: mode === DARK})}>
+        <header id={classes.header} className={classNames("container", { [classes.dark]: mode === DARK })}>
             <img id={classes.logo} src={mode === DARK ? logoDark : logoLigth} alt="Logo" />
             <menu>
                 <a href="#a" className={classes.active}>
@@ -29,7 +30,12 @@ const Header = () => {
                 <a href="#a">Order a consultaton</a>
             </menu>
             <img id={classes.lang} src={mode === DARK ? langDark : langLight} alt="Lang" />
-            <Switcher title={mode === DARK ? LIGHT : DARK} onChange={onSwitcherChange} />
+            <Switcher
+                classList={classes.themeSwitcher}
+                title={mode === DARK ? LIGHT : DARK}
+                onChange={onSwitcherChange}
+            />
+            <img id={classes.avatar} src={avatar} alt="Avatar" />
         </header>
     );
 };
