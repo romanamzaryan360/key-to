@@ -121,7 +121,7 @@
     #signUp {
         #container {
             z-index: 2;
-            img {
+            >img {
                 opacity: 50%;
                 z-index: -1;
             }
@@ -197,7 +197,7 @@
                 }
             }
 
-            img {
+            >img {
                 opacity: 15%;
                 position: absolute;
                 top: 36px;
