@@ -88,6 +88,13 @@
                 color: #6750a4;
                 margin-bottom: 16px;
                 margin-top: 20px;
+                cursor: pointer;
+                transition: all 0.3s;
+
+                &:hover {
+                    background-color: #dbd2e0;
+                    color: #7860b9;
+                }
             }
 
             #signIn {
@@ -100,6 +107,11 @@
                 font-family: Montserrat;
                 text-transform: uppercase;
                 text-align: center;
+                transition: all 0.3s;
+
+                &:hover {
+                    color: #e4e4e4;
+                }
             }
         }
     }

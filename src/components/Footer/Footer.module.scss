@@ -30,6 +30,11 @@
                 margin-bottom: 8p;
                 text-decoration: none;
                 display: block;
+                transition: all 0.2s;
+
+                &:hover {
+                    color: darken(#625b71, 20);
+                }
 
                 &:last-child {
                     margin-bottom: 0;
@@ -74,6 +79,12 @@
                     background-color: transparent;
                     border-radius: 4px;
                     margin-left: 5px;
+                    color: #49454f;
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: 0.5px;
 
                     &::placeholder {
                         color: #49454f;
@@ -100,6 +111,12 @@
                     letter-spacing: 0.1px;
                     border: none;
                     margin-left: 5px;
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #625b71cc;
+                    }
                 }
             }
         }
@@ -127,6 +144,10 @@
             #menu {
                 a {
                     color: #ffffff;
+
+                    &:hover {
+                        color: #a3a1a1;
+                    }
                 }
             }
 
@@ -137,6 +158,8 @@
                     }
 
                     input {
+                        color: #fef7ff;
+
                         &::placeholder {
                             color: #fef7ff;
                         }
@@ -145,6 +168,11 @@
                     button {
                         background-color: #f7f2fa;
                         color: #6750a4;
+
+                        &:hover {
+                            background-color: #6750a4;
+                            color: #f7f2fa;
+                        }
                     }
                 }
             }
@@ -180,7 +208,7 @@
                     font-size: 12px;
                     line-height: 16px;
                     text-align: Center;
-                    color: #6750A4;
+                    color: #6750a4;
                     width: 287px;
                     margin: auto;
                     letter-spacing: 0;

@@ -1,6 +1,11 @@
 #socials {
     display: flex;
     gap: 27.86px;
+    cursor: pointer;
+
+    img:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 900px) {

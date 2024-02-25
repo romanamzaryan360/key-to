@@ -49,6 +49,11 @@
         color: #6750a4;
         text-decoration: none;
         padding: 12px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: #eaddff00;
+        }
     }
 
     &.small {
@@ -70,6 +75,10 @@
 
         p {
             color: #ffffff;
+        }
+
+        a:hover {
+            background-color: #eaddffaa;
         }
     }
 }
@@ -176,7 +185,6 @@
             font-size: 14px;
             line-height: 20px;
             letter-spacing: 0.1px;
-
         }
 
         &.small {
@@ -194,7 +202,7 @@
                 letter-spacing: 0;
                 margin-bottom: 15px;
             }
-    
+
             p {
                 font-weight: 500;
                 font-size: 14px;
@@ -203,13 +211,12 @@
                 width: 300px;
                 margin-bottom: 16px;
             }
-    
+
             a {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 20px;
                 letter-spacing: 0.1px;
-    
             }
         }
     }

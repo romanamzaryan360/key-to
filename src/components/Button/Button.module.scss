@@ -10,13 +10,24 @@
     border-radius: 100px;
     padding: 10px, 66px, 10px, 66px;
     gap: 8px;
-    background-color: #D0BCFF;
+    background-color: #d0bcff;
     box-shadow: 0px 1px 3px 1px #00000026, 0px 1px 2px 0px #0000004d;
-    color: #6750A4;
+    color: #6750a4;
     transition: all 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #b8a4e7;
+        color: #7862b6;
+    }
 
     &.dark {
         background-color: #21005d;
         color: #ffffff;
+
+        &:hover {
+            background-color: #350a85;
+            color: #e6dddd;
+        }
     }
 }

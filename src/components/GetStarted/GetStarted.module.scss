@@ -71,6 +71,11 @@
             button {
                 color: #6750a4 !important;
                 background-color: #f7f2fa !important;
+
+                &:hover {
+                    color: #7e6eacff !important;
+                    background-color: #ffffff11 !important;
+                }
             }
         }
     }
@@ -222,7 +227,6 @@
             img {
                 width: 100%;
                 height: 100%;
-                
             }
         }
 
@@ -281,8 +285,8 @@
                 font-size: 14px;
                 line-height: 16px;
                 letter-spacing: 1px;
-                color: #FFFFFF;
-                background-color: #21005D;
+                color: #ffffff;
+                background-color: #21005d;
             }
         }
 
@@ -303,16 +307,16 @@
 
             #smallContent {
                 margin-top: 16px;
-    
+
                 p {
                     &:nth-child(2) {
                         margin-top: 20px;
                     }
                 }
-    
+
                 button {
-                    color: #1D192B;
-                    background-color: #E8DEF8;
+                    color: #1d192b;
+                    background-color: #e8def8;
                 }
             }
         }
