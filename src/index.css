@@ -36,6 +36,10 @@ body.Dark {
 	.container {
 		width: 600px;
 	}
+
+	#app {
+		padding-bottom: 110px;
+	}
 }
 
 @media (max-width: 600px) {

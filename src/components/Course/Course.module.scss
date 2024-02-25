@@ -88,6 +88,7 @@
         width: 536px !important;
         background-color: #625b71;
         height: 247px;
+        margin: auto;
 
         img {
             max-width: 50px;
@@ -124,6 +125,10 @@
             line-height: 16px;
             letter-spacing: 0;
             color: #6750a4;
+
+            &:hover {
+                color: #eaddff;
+            }
         }
 
         &.small {
