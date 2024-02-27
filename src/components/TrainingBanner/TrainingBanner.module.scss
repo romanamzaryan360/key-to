@@ -1,3 +1,5 @@
+@import "../../vars";
+
 #banner {
     position: relative;
     padding-top: 36px;
@@ -40,29 +42,24 @@
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: $tablet-max-size) {
     #banner {
-        #background {
-            img.hidable {
-                display: none !important;
-            }
-        }
-    }
-}
-
-@media (max-width: 900px) {
-    #banner {
-        padding-top: 64px;
-        padding-bottom: 64px;
+        padding: 64px 20px;
 
         #background {
             height: 100%;
+
             img {
                 height: 100%;
+
+                &.hidable {
+                    display: none !important;
+                }
             }
         }
 
         #content {
+            width: 100%;
             flex-direction: column;
 
             h2 {
@@ -77,6 +74,7 @@
             }
 
             p {
+                width: 100%;
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 20px;
@@ -88,7 +86,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-max-size) {
     #banner {
         #background {
             width: 100%;
@@ -107,6 +105,7 @@
 
         #content {
             h2 {
+                width: 358px;
                 text-transform: uppercase;
                 text-align: center;
                 font-size: 32px;
@@ -127,6 +126,27 @@
                 br {
                     display: none;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    #banner {
+        #background img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover;
+        }
+
+        #content {
+            h2 {
+                width: 100%;
+                font-size: 25px;
+            }
+
+            p {
+                width: 100%;
             }
         }
     }

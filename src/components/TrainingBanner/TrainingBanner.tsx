@@ -3,6 +3,7 @@ import bannerPattern from "../../assets/svg/banner-pattern.svg";
 import bannerPattern2 from "../../assets/svg/banner-pattern-2.svg";
 import bannerPattern3 from "../../assets/svg/banner-pattern-3.svg";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { TABLET_MIN_SIZE } from "../../constants/sizes";
 
 const TrainingBanner = () => {
     const { width } = useWindowDimensions();
@@ -19,7 +20,7 @@ const TrainingBanner = () => {
             </div>
             <div id={classes.content} className="container">
                 <h2>Training at KeyToSchool</h2>
-                {width > 600 ? (
+                {width >= TABLET_MIN_SIZE ? (
                     <p>
                         If you want to improve the skill of self-realization, we offer <br />
                         training courses using the "Key To" method, as well as personal <br />

@@ -1,10 +1,10 @@
 export const DESKTOP_DEVICE = "desktop";
 
-export const DESKTOP_MIN_SIZE: number = 1133;
+export const DESKTOP_MIN_SIZE: number = 1140;
 export const DESKTOP_CONTAINER_SIZE: number = 1128;
 
 export const TABLET_DEVICE = "tablet";
-export const TABLET_MAX_SIZE: number = 1132;
+export const TABLET_MAX_SIZE: number = 1139;
 export const TABLET_MIN_SIZE: number = 600;
 export const TABLET_CONTAINER_SIZE: number = 536;
 
