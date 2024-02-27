@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import type { MODE } from "./types";
-import { LIGHT } from "../../constants/modes";
+import { DARK, LIGHT } from "../../constants/modes";
+import { RootState } from "..";
 
 const initialState: {
     mode: MODE;
@@ -13,10 +14,12 @@ const appSlice = createSlice({
     initialState,
     reducers: {
         switchMode: (state, action: PayloadAction<MODE>) => {
-            state.mode  = action.payload;
+            state.mode = action.payload;
         },
     },
 });
+
+export const selectIsDark = (state: RootState) => state.app.mode === DARK;
 
 export const { switchMode } = appSlice.actions;
 

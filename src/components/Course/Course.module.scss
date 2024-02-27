@@ -1,12 +1,17 @@
-#course {
+@import "../../vars";
+
+.course {
     width: 360px;
     height: 401px;
     padding: 32.18px;
     border: 0.5px solid #4a4458;
     border-radius: 16px;
     position: relative;
+    transition: background-color 0.3s;
+    cursor: pointer;
 
-    img {
+    svg {
+        display: block;
         margin-bottom: 24.5px;
         position: absolute;
         top: 32.18px;
@@ -22,6 +27,7 @@
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 16px;
+        transition: color 0.3s;
     }
 
     p {
@@ -32,6 +38,7 @@
         line-height: 20px;
         letter-spacing: 0.1px;
         padding-bottom: 16px;
+        transition: color 0.3s;
     }
 
     a {
@@ -49,17 +56,12 @@
         color: #6750a4;
         text-decoration: none;
         padding: 12px;
-        transition: all 0.3s;
-
-        &:hover {
-            background-color: #eaddff00;
-        }
     }
 
     &.small {
         padding-right: 26.88px;
 
-        img {
+        svg {
             top: 25px;
         }
 
@@ -76,21 +78,29 @@
         p {
             color: #ffffff;
         }
+    }
 
-        a:hover {
-            background-color: #eaddffaa;
+    &:hover {
+        background-color: #625b71;
+
+        h3 {
+            color: #eaddff;
+        }
+
+        p {
+            color: #ffffff;
         }
     }
 }
 
-@media (max-width: 900px) {
-    #course {
+@media (max-width: $tablet-max-size) {
+    .course {
         width: 536px !important;
         background-color: #625b71;
         height: 247px;
         margin: auto;
 
-        img {
+        svg {
             max-width: 50px;
             top: 32px;
             left: 32px;
@@ -125,14 +135,10 @@
             line-height: 16px;
             letter-spacing: 0;
             color: #6750a4;
-
-            &:hover {
-                color: #eaddff;
-            }
         }
 
         &.small {
-            img {
+            svg {
                 width: 42px;
                 top: 30px;
             }
@@ -154,13 +160,13 @@
     }
 }
 
-@media (max-width: 600px) {
-    #course {
+@media (max-width: $mobile-max-size) {
+    .course {
         width: 358px !important;
         margin: auto;
         height: auto;
 
-        img {
+        svg {
             max-width: 103px;
             top: 29px;
         }
@@ -193,7 +199,7 @@
         }
 
         &.small {
-            img {
+            svg {
                 width: 68px !important;
             }
 
@@ -223,6 +229,28 @@
                 line-height: 20px;
                 letter-spacing: 0.1px;
             }
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    .course {
+        width: 100% !important;
+
+        svg {
+            max-width: 30%;
+        }
+
+        h3 {
+            width: 100% !important;
+        }
+
+        p {
+            width: 100% !important;
+        }
+
+        a {
+            width: 100% !important;
         }
     }
 }

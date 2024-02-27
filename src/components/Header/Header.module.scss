@@ -1,3 +1,5 @@
+@import "../../vars";
+
 #header {
     margin-top: 24px;
     height: 48px;
@@ -65,7 +67,7 @@
     }
 }
 
-@media (max-width: 1220px) {
+@media (max-width: $tablet-max-size) {
     #header {
         justify-content: space-between;
 
@@ -87,18 +89,7 @@
     }
 }
 
-@media (max-width: 900px) {
-    #header {
-        width: 536px;
-
-        #logo {
-            width: 121.15px;
-            height: 44.17px;
-        }
-    }
-}
-
-@media (max-width: 600px) {
+@media (max-width: $mobile-max-size) {
     #header {
         width: 358px;
 
