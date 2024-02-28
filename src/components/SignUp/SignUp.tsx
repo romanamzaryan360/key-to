@@ -28,18 +28,20 @@ const SignUp = () => {
                     </p>
 
                     <div id={classes.formGroup}>
-                        <FormInput type="email" id="email" help="Enter your valid email" placeholder="Email address" />
+                        <FormInput type="email" id="email" help="Enter your valid email" placeholder="Email address" required />
                         <FormInput
                             type="password"
                             id="password"
                             help="Create a strong password"
                             placeholder="Password"
+                            required
                         />
                         <FormInput
                             type="password"
                             id="password_confirmation"
                             help={width > 900 ? "Confirm your password" : "Type your new password here"}
                             placeholder="Confirm password"
+                            required
                         />
                     </div>
 

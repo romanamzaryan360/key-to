@@ -36,6 +36,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            transition: background-color 0.2s;
 
             span {
                 display: flex;
@@ -50,6 +51,10 @@
                 color: #601410;
                 border-radius: 50%;
                 font-size: 11px;
+            }
+
+            &:active {
+                background-color: #7D5260 !important;
             }
 
             img {
