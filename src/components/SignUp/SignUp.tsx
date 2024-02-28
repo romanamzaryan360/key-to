@@ -6,15 +6,20 @@ import { DARK } from "../../constants/modes";
 import FormInput from "../FormInput";
 import FormCheckbox from "../FormCheckbox";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import type { FormEvent } from "react";
 
 const SignUp = () => {
     const mode = useAppSelector((state) => state.app.mode);
     const { width } = useWindowDimensions();
 
+    const submitHandler = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+    };
+
     return (
         <div id={classes.signUp}>
             <div id={classes.container} className="container">
-                <form>
+                <form onSubmit={submitHandler}>
                     <h3>Lets start</h3>
                     <h2>SIGN UP</h2>
                     <p>
@@ -47,7 +52,7 @@ const SignUp = () => {
                                 Terms of use
                             </a>
                         </div>
-                        <FormCheckbox id="terms" />
+                        <FormCheckbox />
                     </div>
 
                     <button id={classes.submit} type="submit">

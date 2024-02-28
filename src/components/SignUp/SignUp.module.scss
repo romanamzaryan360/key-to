@@ -1,3 +1,5 @@
+@import "../../vars";
+
 #signUp {
     background-color: #4a4458;
     background-image: url(../../assets/svg/background-pattern.svg);
@@ -10,6 +12,7 @@
         padding-bottom: 64px;
 
         form {
+            z-index: 3;
             h3 {
                 font-family: Montserrat;
                 font-weight: 500;
@@ -90,6 +93,7 @@
                 margin-top: 20px;
                 cursor: pointer;
                 transition: all 0.3s;
+                border: none;
 
                 &:hover {
                     background-color: #dbd2e0;
@@ -114,22 +118,14 @@
                 }
             }
         }
-    }
-}
 
-@media (max-width: 1220px) {
-    #signUp {
-        #container {
+        img {
             z-index: 2;
-            >img {
-                opacity: 50%;
-                z-index: -1;
-            }
         }
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: $tablet-max-size) {
     #signUp {
         background-image: none;
 
@@ -176,7 +172,7 @@
 
                 #agreeWithTerms {
                     width: 331px;
-                    margin-bottom: 23px;
+                    margin-bottom: 26px;
                 }
 
                 #submit {
@@ -197,7 +193,7 @@
                 }
             }
 
-            >img {
+            > img {
                 opacity: 15%;
                 position: absolute;
                 top: 36px;
@@ -208,7 +204,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: $mobile-max-size) {
     #signUp {
         display: none;
     }

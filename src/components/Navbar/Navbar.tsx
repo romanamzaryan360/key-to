@@ -8,9 +8,11 @@ const Navbar = () => {
     return (
         <div id={classes.navbar}>
             <button>
+                <span>3</span>
                 <img src={main} alt="Main" />
             </button>
             <button>
+                <span>3</span>
                 <img src={chat} alt="Chat" />
             </button>
             <button>

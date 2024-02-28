@@ -6,6 +6,7 @@ import logoSmallDark from "../../assets/svg/logo-small-dark.svg";
 import logoSmallLight from "../../assets/svg/logo-small-light.svg";
 import Socials from "../Socials";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { TABLET_MAX_SIZE } from "../../constants/sizes";
 
 const Footer = () => {
     const mode = useAppSelector((state) => state.app.mode);
@@ -20,7 +21,7 @@ const Footer = () => {
                         The unique system of KeyTo is meant to analyze a person's data and find better compatibility
                         between people.
                     </p>
-                    {width > 900 ? <Socials classList={classes.socialsList} /> : null}
+                    {width > TABLET_MAX_SIZE ? <Socials classList={classes.socialsList} /> : null}
                 </div>
                 <div id={classes.menu}>
                     <a href="#about">About Us</a>
@@ -37,7 +38,7 @@ const Footer = () => {
                         <button>Subscribe now</button>
                     </form>
                 </div>
-                {width <= 900 ? <Socials classList={classes.socialsList} /> : null}
+                {width <= TABLET_MAX_SIZE ? <Socials classList={classes.socialsList} /> : null}
             </div>
             <p id={classes.copyright}>© Copyright 2022, All Rights Reserved by KEYTO</p>
         </div>

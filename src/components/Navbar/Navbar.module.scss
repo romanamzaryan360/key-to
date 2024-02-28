@@ -1,8 +1,10 @@
+@import "../../vars";
+
 #navbar {
     display: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: $tablet-max-size) {
     #navbar {
         position: fixed;
         bottom: 0;
@@ -33,6 +35,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 7px;
+                right: 12px;
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                background-color: #f2b8b5;
+                color: #601410;
+                border-radius: 50%;
+                font-size: 11px;
+            }
 
             img {
                 width: 24px;

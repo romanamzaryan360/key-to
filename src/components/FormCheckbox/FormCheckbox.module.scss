@@ -1,7 +1,8 @@
+@import "../../vars";
+
 .checkbox {
     user-select: none;
     padding: 11px;
-    padding-top: 23px;
 
     input {
         position: absolute;
@@ -26,5 +27,11 @@
         &.active {
             background-color: #6750a4;
         }
+    }
+}
+
+@media (max-width: $tablet-max-size) {
+    .checkbox {
+        padding-top: 23px;
     }
 }

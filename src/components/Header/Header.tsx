@@ -19,7 +19,7 @@ const Header = () => {
 
     return (
         <header id={classes.header} className={classNames("container", { [classes.dark]: isDark })}>
-            <LogoSVG id={classes.logo} dark={isDark} />
+            <LogoSVG dark={isDark} />
             <menu>
                 <a href="#personal_analyses" className={classes.active}>
                     Personal analyses

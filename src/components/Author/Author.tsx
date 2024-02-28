@@ -4,6 +4,7 @@ import { useAppSelector } from "../../store";
 import classNames from "classnames";
 import { DARK } from "../../constants/modes";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
+import { TABLET_MIN_SIZE } from "../../constants/sizes";
 
 const about = (
     <p>
@@ -23,10 +24,10 @@ const Author = () => {
                 <h2>
                     Alexey Kapustin <br /> The founder of KeyTo project
                 </h2>
-                {width > 600 ? about : null}
+                {width >= TABLET_MIN_SIZE ? about : null}
             </div>
             <img src={author} alt="Author" />
-            {width <= 600 ? about : null}
+            {width < TABLET_MIN_SIZE ? about : null}
         </div>
     );
 };

@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
 
-    #logo {
+    >svg {
         margin-right: 64px;
     }
 
@@ -86,6 +86,11 @@
         #avatar {
             display: block;
         }
+
+        >svg {
+            width: 116.04px !important;
+            height: 39.04px !important;
+        }
     }
 }
 
@@ -93,7 +98,19 @@
     #header {
         width: 358px;
 
-        #logo {
+        >svg {
+            width: 116.04px;
+            height: 39.04px;
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    #header {
+        width: 100%;
+        padding: 0 10px;
+
+        >svg {
             width: 121.15px;
             height: 44.17px;
         }

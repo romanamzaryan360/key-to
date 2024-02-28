@@ -1,9 +1,12 @@
+@import "../../vars";
+
 #footer {
     #wrapper {
         display: flex;
 
         #socials {
             margin-right: 192px;
+
             p {
                 width: 288px;
                 color: #625b71;
@@ -18,7 +21,8 @@
         }
 
         #menu {
-            margin-right: 96px;
+            margin-top: 0;
+            margin-right: 106px;
 
             a {
                 font-family: Montserrat;
@@ -52,7 +56,6 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            margin-left: 10px;
 
             #subscribe {
                 label {
@@ -184,13 +187,18 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: $tablet-max-size) {
     #footer {
         width: 360px;
         margin: auto;
 
         #wrapper {
             flex-direction: column;
+
+            .socialsList {
+                width: 193.26px;
+                margin: auto;
+            }
 
             #socials {
                 width: 100%;
@@ -333,6 +341,58 @@
 
             #copyright {
                 color: #ffffff;
+            }
+        }
+    }
+}
+
+@media (max-width: $unsafe-mobile-max-size) {
+    #footer {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        #wrapper {
+            width: 100%;
+            margin: auto;
+
+            #socials {
+                margin-right: 0;
+
+                p {
+                    margin-right: auto;
+                    margin-left: auto;
+                    width: 100%;
+                }
+            }
+
+            #menu {
+                margin: auto;
+                margin-bottom: 64px;
+            }
+
+            #subscribeWrapper {
+                width: 100%;
+                margin: auto;
+
+                #subscribe {
+                    label {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    input {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+
+                    button {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
             }
         }
     }
